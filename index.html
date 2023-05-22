@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xius-Newsletter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Variable declaration */
+        :root {
+            --primary-color: #26C3FF;
+            --secondary-color: rgb(211, 206, 206);
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .hero {
+            background-image: url(assets/herosection.jpg);
+            background-position: 60% 20%;
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-size: cover;
+
+        }
+
+        @media (min-width: 768px) {
+            .hero {
+                background-position: 10% 20%;
+                height: 100vh;
+                background-size: cover;
+            }
+
+
+        }
+
+        /* Eid,Holi,Ugadi, Womens Day section */
+        .bg-color:nth-child(even) {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .bg-color:nth-child(odd) {
+            background-color: var(--secondary-color);
+            color: black;
+        }
+
+        .bg-color:nth-child(odd) h2 {
+            border-bottom: 2px black solid;
+            width: 80%;
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        .bg-color:nth-child(even) h2 {
+            border-bottom: white 2px solid;
+            width: 80%;
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        /* Arrow'ed div */
+        @media (min-width: 768px) {
+            .arrow-left {
+                clip-path: polygon(3% 0, 100% 0%, 100% 100%, 3% 100%, 0 50%);
+            }
+
+            .arrow-right {
+                clip-path: polygon(0% 0%, 97% 0, 100% 50%, 97% 100%, 0% 100%);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <nav class=" absolute flex z-[10]">
+        <div class="min-h-32 w-64 bg-white  ">
+            <img src="assets/logo.png" alt="" class="h-24 p-4 mx-auto">
+        </div>
+        <div class="bg-white w-24 " style="border-bottom-right-radius:50% ;border-top-right-radius:0% ; border-top-left-radius: 0%; clip-path: circle(50% at  3%);
+        "> </div>
+    </nav>
+    <section style="background-color: rgba(0, 0, 0, 0.);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;">
+        <div class="w-full h-[100vh] hero flex " style>
+            <div class="w-full my-auto " style="background-color: rgba(0,0,0,0.5); top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; ">
+                <div class="">
+                    <div
+                        class="text-white text-lg sm:text-4xl flex flex-col items-center justify-center ] w-[95%] sm:w-[50%] my-[50%] md:my-[10%] mx-auto  bg-[var(--primary-color)] opacity-75 p-10">
+                        <h3 class="my-3 sm:text-xl text-sm font-semibold ">CONNECTING HORIOZONS</h3>
+                        <h1 class="sm:text-6xl text-2xl text-center font-extrabold my-3">XIUS ANNUAL DIGEST</h1>
+                        <p class="text-center text-sm sm:text-lg">Greetings from XIUS, a team driven by innovation,
+                            agility, and
+                            unwavering
+                            commitment
+                            to customer
+                            satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-[4vw]  bg-[var(--primary-color)] text-white mb-4">
+        <p>
+            As a revered leader in the mobile technology industry, we are proud to redefine the landscape of
+            connectivity and transactions through groundbreaking solutions. Our continuous pursuit of excellence propels
+            us to push boundaries to shape a future where seamless interactions and transformative experiences become
+            the norm.
+        </p>
+    </section>
+
+    <!-- Message from CEO -->
+    <section class="mb-12">
+        <h1 class="text-[var(--primary-color)] sm:text-5xl  w-[95%] mx-auto text-2xl font-bold text-center">
+            Message From Our CEO
+        </h1>
+        <div class="p-[2vw] mt-5 sm:w-[75%] mx-auto">
+            <div class="sm:text-lg text-sm font-bold mx-auto ">Greetings!</div>
+            <p class="leading-7 text-xs sm:text-lg mx-auto">
+                I would like to take a moment to reach out and express my sincere gratitude. Your unwavering support and
+                partnership have played a pivotal role in our success.
+
+                At Xius, we envision revolutionizing the mobile and digital payments industry by redefining the customer
+                experience. Your input is invaluable, and we encourage you to share your thoughts and success stories
+                with us. This feedback enables us to tailor our offerings to serve you better.
+
+                We understand that strong relationships are essential for success, which is why we are excited to
+                introduce our newsletter. It will keep you informed about the latest happenings at Xius, including new
+                product launches, industry insights, and upcoming events. Our objective is to enhance communication and
+                provide valuable information that supports your business goals.
+
+                Rest assured, our unwavering commitment to excellence propels us forward. We remain dedicated to
+                nurturing a robust partnership with you as we embrace the opportunities that lie ahead.
+
+            </p>
+            <p class="text-center font-semibold italic mt-12">
+                Thank you for choosing Xius as your trusted ally. We look forward to continuing our journey together.
+            </p>
+        </div>
+    </section>
+
+    <!-- Exciting Tech Updates -->
+    <section class="mb-32">
+        <h1 class="text-black sm:text-5xl text-4xl font-bold text-center ">
+            Exciting Tech Updates From XIUS
+        </h1>
+        <p class="text-center my-[4vw] text-xs sm:text-lg   sm:w-5/6 mx-auto">
+            XIUS continues to drive technological advancements that redefine the digital landscape. With a focus on
+            seamless experiences and digital transformations, we introduce two noteworthy innovations this year.
+        </p>
+        <div class="grid grid-cols-2  p-4 mb-8">
+            <div class="bg-[var(--primary-color)] p-4 text-white w-[90%] sm:w-[75%] mx-auto relative">
+                <div
+                    class="max-h-32  relative top-[-5%] md:top-[-12%] bg-[white] w-[80%] sm:w-[25%] mx-auto rounded-[50%] p-4 border-2 border-black">
+                    <img src="assets/network.png" alt="" class="w-20 mx-auto ">
+                </div>
+                <h3 class="text-center sm:text-xl mb-2"> Private 5G Network Solution</h3>
+                <p class="font-light text-xs  sm:text-lg">
+                    XIUS is at the forefront of the private 5G network revolution. Our network solution offers dedicated
+                    bandwidth, ultra-reliable low-latency connectivity, and enhanced control over data, security, and
+                    networks. With unparalleled scalability and potential for innovative use cases such as edge
+                    computing, our private 5G solution empowers enterprises to unlock new opportunities for digital
+                    transformation.
+                </p>
+            </div>
+            <div class="bg-[var(--primary-color)] p-4 text-white w-[90%] sm:w-[75%] mx-auto relative">
+                <div
+                    class="max-h-32  relative top-[-5%] md:top-[-12%] bg-[white] w-[80%] sm:w-[25%] mx-auto rounded-[50%] p-4 border-2 border-black">
+                    <img src="assets/ewallet.png" alt="" class="w-20 mx-auto ">
+                </div>
+                <h3 class="text-center sm:text-xl mb-2"> Private 5G Network Solution</h3>
+                <p class="font-light text-xs sm:text-lg">
+                    XIUS is at the forefront of the private 5G network revolution. Our network solution offers dedicated
+                    bandwidth, ultra-reliable low-latency connectivity, and enhanced control over data, security, and
+                    networks. With unparalleled scalability and potential for innovative use cases such as edge
+                    computing, our private 5G solution empowers enterprises to unlock new opportunities for digital
+                    transformation.
+                </p>
+            </div>
+
+
+        </div>
+        <p class="italic mx-auto text-center font-bold">
+
+            Stay tuned for more updates as we continue to drive innovation and deliver solutions that empower industries
+            worldwide.
+
+        </p>
+    </section>
+
+    <!-- XIUS At prominent Industry Events -->
+    <section class="mb-12">
+        <h1 class="text-black sm:text-5xl text-4xl font-bold text-center md:w-[65%] mx-auto mb-8">
+            Embracing Global Connections: XIUS At Prominent Industry Events
+        </h1>
+        <p class="text-sm sm:text-lg md:w-[60%] mx-auto p-4 text-center">
+            XIUS actively participated in various industry events, fostering collaboration and connections with global
+            visionaries. We are thrilled to have had the opportunity to collaborate with global visionaries and expand
+            our horizons through these noteworthy events this year
+        </p>
+        <div class="grid md:grid-cols-3 gap-10 mx-auto p-10">
+            <div class="border-2 border-[var(--primary-color)] ">
+                <div
+                    class="text-white bg-[var(--primary-color)] font-extrabold text-center md:text-xl p-10 pt-0 relative  ">
+                    <span class="text-6xl relative -top-8 outline-4 text-[var(--primary-color)] outline-black"
+                        style="-webkit-text-stroke: 2px white; ">01</span>
+                    <br>
+                    <h3 class="relative h-12
+                    ">America Digital 2023 Mexico Press Release: April 2023</h3>
+                </div>
+                <p class="p-10">
+                    During April 2023, we made an impact with our press release at America Digital 2023 Mexico. The
+                    event provided an ideal platform to highlight our innovative X-PayD digital wallet solutions. Our
+                    focus was on presenting the advantages of digital payments and the growing preference for digital
+                    wallets over traditional financial systems.
+                </p>
+            </div>
+            <div class="border-2 border-[var(--primary-color)] ">
+                <div
+                    class="text-white bg-[var(--primary-color)] font-extrabold text-center md:text-xl p-10 pt-0 relative  ">
+                    <span class="text-6xl relative -top-8 outline-4 text-[var(--primary-color)] outline-black"
+                        style="-webkit-text-stroke: 2px white; ">02</span>
+                    <br>
+                    <h3 class="relative h-12
+                    ">America Digital 2023 - June 2023
+                    </h3>
+                </div>
+                <p class="p-10">
+                    The event is to be held in June 2023. We would be showcasing our brand strategies and innovative
+                    smartphone solutions here. So, stay tuned for updates on the latest developments during this event!
+                </p>
+            </div>
+            <div class="border-2 border-[var(--primary-color)] ">
+                <div
+                    class="text-white bg-[var(--primary-color)] font-extrabold text-center md:text-xl p-10 pt-0 relative  ">
+                    <span class="text-6xl relative -top-8 outline-4 text-[var(--primary-color)] outline-black"
+                        style="-webkit-text-stroke: 2px white; ">03</span>
+                    <br>
+                    <h3 class="relative h-12">The BIG 5G Event: May 2023</h3>
+                </div>
+                <p class="p-10">
+                    In May 2023, we attended The BIG 5G Event held in Austin, Texas. This esteemed gathering brought
+                    together industry leaders to discuss the future of 5G networks. At XIUS, we showcased our expertise
+                    and joined insightful discussions on the modernization of 5G networks, emphasizing our commitment to
+                    shaping the industry's future.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Revisiting Moments of... -->
+    <section class="mb-24">
+        <h1 class="text-black sm:text-5xl text-4xl font-bold text-center md:w-[65%] mx-auto mb-8">
+            Revisiting Moments of Celebration at XIUS
+        </h1>
+        <p class="text-center font-semibold italic my-6 w-[75%] mx-auto">
+            Celebrations not only uplift our spirits but also reinforce a sense of unity and positivity, creating a
+            stronger, more cohesive team that can tackle any challenge with enthusiasm and shared purpose.
+        </p>
+        <p class="text-center my-6 w-[75%] mx-auto">
+            Let's take a glimpse at some recent celebrations that brought joy and a sense of belonging to our offices:
+
+        </p>
+        <div class="grid grid-row-3 p-1 md:w-[75%] mx-auto mt-10 ">
+
+            <div class="sm:grid sm:grid-cols-2 bg-color">
+
+                <div class=" p-10 sm:p-20">
+                    <h2>Holi</h2>
+                    <p>Colors exploded in our workplaces, creating an atmosphere brimming with pure joy and camaraderie.
+                        We came together to celebrate this vibrant festival, embracing the spirit of togetherness.</p>
+                </div>
+                <div class="">
+                    <img src="assets/holi.jpg" alt="" class="w-full h-full">
+                </div>
+            </div>
+            <div class="sm:grid sm:grid-cols-2 flex flex-col-reverse bg-color">
+                <div>
+                    <img src="assets/holi.jpg" alt="" class="w-full h-full">
+                </div>
+                <div class="p-10 sm:p-20">
+                    <h2>Ugadi</h2>
+                    <p>
+                        As we welcomed the new year of growth in 2023, we commemorated the auspicious occasion of Ugadi.
+                        The celebration symbolized fresh opportunities and prosperity, setting the stage for an exciting
+                        journey ahead.
+                    </p>
+                </div>
+
+            </div>
+            <div class="sm:grid sm:grid-cols-2 bg-color">
+
+                <div class="p-10 sm:p-20">
+                    <h2>Eid</h2>
+                    <p>
+                        We embraced the diversity that enriches us by commemorating the festival of Eid. This special
+                        occasion reinforced the values of warmth and harmony, fostering unity among our team members
+                    </p>
+                </div>
+                <div>
+                    <img src="assets/holi.jpg" alt="" class="w-full h-full">
+                </div>
+            </div>
+            <div class="sm:grid sm:grid-cols-2 flex flex-col-reverse bg-color">
+                <div>
+                    <img src="assets/holi.jpg" alt="" class="w-full h-full">
+                </div>
+                <div class="p-10 sm:p-16">
+                    <h2 class="">Women's Day Celebration</h2>
+                    <p>
+                        We took the time to honor and appreciate the extraordinary women who contribute to our offices
+                        every day. Their unwavering dedication and resilience serve as an inspiration to us all. We are
+                        grateful for their invaluable support, which is the cornerstone of our enterprise.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Technology advancements..... -->
+    <section class="">
+        <h1 class="text-black sm:text-5xl text-4xl font-bold text-center md:w-[65%] mx-auto mb-8">
+            Technology Advancements to look out for in 2023 - 24
+        </h1>
+        <p class="text-center text-sm font-semibold italic my-6 w-[75%] mx-auto">
+            A look at some promising technology advancements that are set to impact the digital payment landscape.
+        </p>
+        <div class="mt-16 bg-[var(--secondary-color)] sm:bg-white">
+            <div class="bg-[var(--primary-color)]  mx-auto text-white p-10 sm:w-4/5 md:w-2/3 arrow-left  ">
+                <h1 class="text-2xl text-center mb-4">
+                    Open Banking and Digital Wallet Integration:
+                </h1>
+                <p class="">
+                    One exciting development is the integration of open banking APIs with digital wallets, allowing
+                    secure connections between wallets and users' bank accounts. This innovation facilitates seamless
+                    transactions, real-time fund transfers, and a comprehensive view of financial information,
+                    empowering users with personalized recommendations.
+                </p>
+            </div>
+            <div class="bg-[var(--secondary-color)] sm:w-4/5 mx-auto  md:w-2/3  md:mx-[18.69%] p-10 arrow-right">
+                <h1 class="text-2xl text-center mb-4">
+                    Biometric Authentication for Mobile Payments:
+                </h1>
+                <p>
+                    Addressing security concerns, mobile payments are embracing biometric authentication methods like
+                    fingerprint scanning, facial recognition, and iris scanning. As these technologies evolve, they have
+                    the potential to replace traditional password-based authentication, offering enhanced security and a
+                    more seamless user experience.
+                </p>
+            </div>
+            <div class="bg-[var(--primary-color)] sm:w-4/5 md:w-2/3 mx-auto text-white p-10 arrow-left">
+                <h1 class="text-2xl text-center mb-4">
+
+                    Edge Computing for Private 5G Networks:
+
+                </h1>
+                <p>
+                    The fusion of private 5G networks and edge computing is revolutionizing data processing at the
+                    network edge. By bringing computing power closer to data sources, edge computing reduces latency and
+                    enables real-time decision-making. Industries such as autonomous vehicles, remote healthcare, and
+                    smart manufacturing benefit from improved efficiency and new possibilities for IoT applications
+                    through local data processing and analysis.
+                </p>
+            </div>
+        </div>
+        <p class="text-sm sm:text-lg md:w-[60%] mx-auto p-4 text-center">
+
+            The world of technology continues to evolve at an unprecedented pace, bringing forth remarkable advancements
+            and shaping our future. At XIUS, we remain committed to staying at the forefront of innovation, delivering
+            cutting-edge solutions that redefine industries and empower businesses to thrive in the digital age.
+
+
+
+        </p>
+        <p class="text-sm sm:text-lg md:w-[60%] mx-auto p-4 text-center">
+            As we move forward, we invite you to join us on this exciting journey, where possibilities are endless and
+            boundaries are continuously pushed. Together, we can embrace the power of innovation, leverage the latest
+            technologies, and unlock the full potential of digital transformation.
+        </p>
+
+        <p class="text-center font-semibold italic my-12 w-[75%] mx-auto">
+            Thank you for being a part of our community. Stay tuned for more updates, insights, and advancements as we
+            continue to pave the way for a future where technology seamlessly integrates into our daily lives,
+            transforming the way we operate and thrive.
+        </p>
+    </section>
+
+    <!-- Blue footer  -->
+    <footer>
+        <div class="relative overflow-x-hidden">
+            <div class="h-[20px] bg-[var(--primary-color)] w-[65%] rounded-3xl mr-[100%] relative left-[50%]">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
